@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hardware Analytics</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #0f2027 30%, #203a43 70%, #2c5364 100%);
+            color: #dfe6e9;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        header {
+            background: rgba(12, 35, 49, 0.9);
+            color: #dfe6e9;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        header ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        header ul li {
+            margin: 0 15px;
+        }
+        header ul li a {
+            color: #dfe6e9;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            transition: background 0.3s;
+        }
+        header ul li a:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        .showcase {
+            height: 100vh;
+            background: url('https://source.unsplash.com/1600x900/?hardware,analytics') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+            padding: 20px;
+            text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        .showcase h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+        .showcase p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        .btn {
+            padding: 15px 30px;
+            background: #0984e3;
+            color: #fff;
+            border: none;
+            border-radius: 30px;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+        .btn:hover {
+            background: #74b9ff;
+            box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        .content {
+            padding: 80px 20px;
+            margin-top: -50px;
+            background: #1e272e;
+            border-radius: 20px;
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        .content .container {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .card {
+            background: #3c6382;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            color: #dfe6e9;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #74b9ff;
+        }
+        .card p, .card ul li {
+            color: #dcdde1;
+            line-height: 1.6;
+        }
+
+        footer {
+            background: #0c1821;
+            color: #dfe6e9;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 50px;
+            border-radius: 0 0 20px 20px;
+            box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Hardware Analytics</h1>
+            </div>
+
+            <ul>
+                <li><a href="/" target="_blank" >Home</a></li>
+                <li><a href="/inputs" target="_blank">Data Inputs</a></li>
+                <li><a href="/visualizations" target="_blank" >Visualization</a></li>
+                <li><a href="/optuna" target="_blank">Optimization</a></li>
+                <li><a href="/c_analysis" target="_blank">Optuna</a> </li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="showcase">
+        <div>
+            <h1>Insights into Hardware Performance</h1>
+            <p>Unlock deeper understanding and optimization of hardware performance metrics.</p>
+            <a href="#content" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <div id="overview" class="card">
+                <h2>Overview</h2>
+                <p>Hardware analytics bridges the gap between raw performance data and actionable insights. Using advanced frameworks like Optuna, it enables optimization of key performance metrics for better decision-making.</p>
+            </div>
+
+            <div id="features" class="card">
+                <h2>Key Features</h2>
+                <p>Our platform offers powerful features:</p>
+                <ul>
+                    <li><strong>Performance Metrics:</strong> Analyze real-time performance data from multiple devices.</li>
+                    <li><strong>Predictive Analytics:</strong> Forecast hardware lifespan and maintenance schedules.</li>
+                    <li><strong>Optimization:</strong> Fine-tune system parameters for peak efficiency.</li>
+                    <li><strong>Scalability:</strong> Handle data from small-scale to enterprise-level hardware setups.</li>
+                </ul>
+            </div>
+
+            <div id="usecases" class="card">
+                <h2>Use Cases</h2>
+                <p>Ideal for:</p>
+                <ul>
+                    <li><strong>System Monitoring:</strong> Keep tabs on CPU, GPU, and memory usage in real-time.</li>
+                    <li><strong>Data Centers:</strong> Optimize server performance and reduce downtime.</li>
+                    <li><strong>IoT Devices:</strong> Manage and analyze hardware performance in IoT ecosystems.</li>
+                    <li><strong>Enterprise Solutions:</strong> Scale performance analytics across multiple systems.</li>
+                </ul>
+            </div>
+
+            <div id="examples" class="card">
+                <h2>Examples</h2>
+                <p>Applications include:</p>
+                <ul>
+                    <li><strong>Example 1:</strong> Analyzing server thermal performance to prevent overheating.</li>
+                    <li><strong>Example 2:</strong> Optimizing battery life in IoT devices using predictive analytics.</li>
+                    <li><strong>Example 3:</strong> Real-time monitoring of data center energy consumption.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

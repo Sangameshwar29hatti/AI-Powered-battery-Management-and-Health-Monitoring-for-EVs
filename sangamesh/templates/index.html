@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battery RUL Prediction</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: #101010;
+            color: #e0e0e0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 30px;
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #00bcd4;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .btn {
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: #101010;
+            background-color: #00bcd4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .btn:hover {
+            background-color: #0097a7;
+            transform: scale(1.05);
+        }
+        footer {
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #b0b0b0;
+        }
+        footer a {
+            color: #00bcd4;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            text-align: left;
+            font-size: 1rem;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .redirection-buttons {
+            margin-top: 30px;
+        }
+        .redirection-buttons a {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            color: #101010;
+            background-color: #00bcd4;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .redirection-buttons a:hover {
+            background-color: #0097a7;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Battery RUL Prediction</h1>
+        <p>
+            <strong>Objective:</strong> Our goal is to predict the Remaining Useful Life (RUL) of batteries using voltage and current measurements, leveraging advanced machine learning techniques including feedforward neural networks and LSTM networks. This project emphasizes hardware analytics to predict battery life and optimize performance.
+        </p>
+        <p>
+            <strong>Motivation:</strong> Traditional battery life predictions rely on measuring battery capacity (mAH), which may not always be available. This project provides an alternative approach, offering solutions for real-time analytics and predictions based on voltage and current data.
+        </p>
+        <p>
+            <strong>Approach:</strong>
+            <ul>
+                <li>• Extract key features from raw voltage, current, and time data collected from hardware devices.</li>
+                <li>• Develop predictive models utilizing deep learning, including feedforward and LSTM architectures.</li>
+                <li>• Evaluate and fine-tune the models for optimal prediction accuracy, ensuring hardware reliability.</li>
+            </ul>
+        </p>
+        <p>
+            Explore cutting-edge hardware analytics to advance battery management systems and ensure longer, more reliable battery lifecycles.
+        </p>
+
+        <div class="redirection-buttons">
+            <a href="/" class="btn">Index</a>
+            <a href="/inputs" class="btn">Neuro Symbolic AI</a>
+            <a href="/visualizations" class="btn">Analysis Dashboard</a>
+            <a href="/optuna" class="btn">optuna</a>
+        </div>
+    </div>
+</body>
+</html>
