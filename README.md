@@ -85,6 +85,8 @@ battery-rul-prediction/
 
 ## 📡 API Endpoints
 
+```bash
+
 | Endpoint          | Method | Description             |
 | ----------------- | ------ | ----------------------- |
 | `/`               | GET    | Home page               |
@@ -98,6 +100,8 @@ battery-rul-prediction/
 
 ## ⚙️ Configuration
 
+```bash
+
 Set Gemini API key in app.py:
 python
 genai.configure(api_key='YOUR_API_KEY_HERE')
@@ -106,6 +110,8 @@ Visuals save to static/images/
 
 ## 📄 License
 
+```bash
+
 MIT License - See LICENSE
 Acknowledgments
 Battery RUL dataset
@@ -113,6 +119,8 @@ Flask, Keras, Plotly libraries
 Google Gemini API
 
 ## 🙏 Acknowledgments
+
+```bash
 
 To download this file:
 1. Copy the entire content above
