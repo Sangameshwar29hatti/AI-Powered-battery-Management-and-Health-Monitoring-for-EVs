@@ -1,4 +1,5 @@
-# 🔋 Battery Remaining Useful Life (RUL) Prediction System
+# 🔋 Ai-powered Intelligent Battery Management & Health Monitoring for Ev’s
+
 
 Predict and analyze the remaining useful life of batteries with AI-powered visualizations, statistical tools, and interactive UI.
 
@@ -59,4 +60,19 @@ source venv/bin/activate  # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')"
+
+
+battery-rul-prediction/
+├── app.py                # Main application
+├── static/
+│   └── images/           # Generated visuals
+├── templates/
+│   ├── index.html        # Home page
+│   ├── inputs.html       # Prediction form
+│   ├── visualization.html# Visual interface
+│   └── casual.html       # Analysis interface
+├── rlu.h5                # Trained Keras model
+├── Battery_RUL.csv       # Dataset
+└── requirements.txt      # Python dependencies
+
 
