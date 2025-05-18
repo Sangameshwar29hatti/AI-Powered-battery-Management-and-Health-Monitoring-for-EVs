@@ -62,7 +62,9 @@ pip install -r requirements.txt
 python -c "import nltk; nltk.download('punkt'); nltk.download('stopwords')"
 
 
-## File structure
+## 📦 File Structure
+
+
 
 
 battery-rul-prediction/
@@ -79,7 +81,7 @@ battery-rul-prediction/
 └── requirements.txt      # Python dependencies
 
 
-## API Endpoints
+## 📡 API Endpoints
 
 | Endpoint          | Method | Description             |
 | ----------------- | ------ | ----------------------- |
@@ -92,7 +94,7 @@ battery-rul-prediction/
 | `/optuna`         | GET    | Show analysis interface |
 | `/c_analysis`     | GET    | Run Optuna analysis     |
 
-## Configuration
+## ⚙️ Configuration
 
 Set Gemini API key in app.py:
 python
@@ -100,7 +102,7 @@ genai.configure(api_key='YOUR_API_KEY_HERE')
 Model: Uses pre-trained rlu.h5
 Visuals save to static/images/
 
-## License
+## 📄 License
 
 MIT License - See LICENSE
 Acknowledgments
@@ -108,8 +110,7 @@ Battery RUL dataset
 Flask, Keras, Plotly libraries
 Google Gemini API
 
-
-## Detailed Steps
+## 🙏 Acknowledgments
 
 To download this file:
 1. Copy the entire content above
